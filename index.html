@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmacia Online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+          <img src="img/logo.png" alt="Logo" class="logo">
+          <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="Productos.html">Productos</a>
+            <a href="#">Contacto</a>
+          </nav>
+          <button class="login-btn">
+            <span class="material-symbols-rounded">person</span>
+            Iniciar sesión
+          </button>
+        </div>
+      </header>
+
+  <section class="slider">
+    <button class="nav left">❮</button>
+    <div class="carousel">
+      <img src="img/banner_01.avif" class="slide active" alt="Banner 1">
+      <img src="img/banner_02.png" class="slide" alt="Banner 2">
+    </div>
+    <button class="nav right">❯</button>
+  </section>
+
+  <section class="productos-destacados">
+    <h2>Lo más visto</h2>
+    <div class="carrusel-productos">
+      <button class="slide-btn left" onclick="document.getElementById('productosSlider').scrollBy({left:-320,behavior:'smooth'})">❮</button>
+      <div class="productos-slider" id="productosSlider">
+
+        <div class="producto">
+          <img src="img/Productos destacados/eucerin_baby.jpg" alt="Eucerin Baby">
+          <p class="etiqueta">FRASCO 240 ML</p>
+          <h3>Baño y Shampoo Eucerin Baby</h3>
+          <p class="marca">FARMA</p>
+          <div class="precios">
+            <p class="precio-regular">S/ 89.90</p>
+            <p class="precio-final">S/ 68.90</p>
+          </div>
+          <div class="delivery-icons">
+            <span class="material-symbols-rounded">local_shipping</span>
+            <span class="material-symbols-rounded">store</span>
+          </div>
+          <button>Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/Productos destacados/Vital_Vitamina.jpg" alt="Vital Adulto">
+          <p class="etiqueta">LATA 400 GR</p>
+          <h3>Vital Vitaminado Adulto Vainilla</h3>
+          <p class="marca">FARMA</p>
+          <div class="precios">
+            <p class="precio-regular">S/ 49.90</p>
+            <p class="precio-final">S/ 39.90</p>
+          </div>
+          <div class="delivery-icons">
+            <span class="material-symbols-rounded">local_shipping</span>
+            <span class="material-symbols-rounded">store</span>
+          </div>
+          <button>Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <img src="img/Productos destacados/shampoo_head.png" alt="Shampoo Head & Shoulders">
+          <p class="etiqueta">FRASCO 375 ML</p>
+          <h3>Shampoo Head & Shoulders Menta</h3>
+          <p class="marca">Head & Shoulders</p>
+          <div class="precios">
+            <p class="precio-regular">S/ 24.90</p>
+            <p class="precio-final">S/ 14.90</p>
+          </div>
+          <div class="delivery-icons">
+            <span class="material-symbols-rounded">local_shipping</span>
+            <span class="material-symbols-rounded">store</span>
+          </div>
+          <button>Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="img/Productos destacados/nivea_men.jpg" alt="Shampoo Head & Shoulders">
+            <p class="etiqueta">SUPER PACK</p>
+            <h3>Pack 02 Desodorante Spray Nivea Men Black & White Invisible</h3>
+            <p class="marca">Head & Shoulders</p>
+            <div class="precios">
+              <p class="precio-regular">S/ 60.90</p>
+              <p class="precio-final">S/ 41.00</p>
+            </div>
+            <div class="delivery-icons">
+              <span class="material-symbols-rounded">local_shipping</span>
+              <span class="material-symbols-rounded">store</span>
+            </div>
+            <button>Agregar al carrito</button>
+          </div>
+
+      </div>
+      <button class="slide-btn right" onclick="document.getElementById('productosSlider').scrollBy({left:320,behavior:'smooth'})">❯</button>
+    </div>
+  </section>
+  <section class="seccion-marcas">
+    <div class="contenedor-marca">
+      <div class="banner-marca">
+        <img src="img/Productos Dove/shampoo-seco-ppal.jpg" alt="Lo nuevo de Dove">
+        <div class="texto-banner">
+          <h2>Lo nuevo de Dove</h2>
+          <button class="ver-mas">Ver más productos</button>
+        </div>
+      </div>
+  
+      <div class="carrusel-productos">
+        <button class="slide-btn left" onclick="document.getElementById('sliderDove').scrollBy({left:-320,behavior:'smooth'})">❮</button>
+        <div class="productos-slider" id="sliderDove">
+  
+          <div class="producto">
+            <img src="img/Productos Dove/shampoo_dove.jpg" alt="Shampoo Dove">
+            <p class="etiqueta">FRASCO 350 ML</p>
+            <h3>Shampoo Dove Bond Intense Repair</h3>
+            <p class="marca">Inkafarma</p>
+            <div class="precios">
+              <p class="precio-regular">S/ 19.90</p>
+              <p class="precio-descuento">S/ 16.90</p>
+              <p class="precio-final">S/ 15.90</p>
+            </div>
+            <div class="delivery-icons">
+              <span class="material-symbols-rounded">local_shipping</span>
+              <span class="material-symbols-rounded">store</span>
+            </div>
+            <button>Agregar al carrito</button>
+          </div>
+  
+          <div class="producto">
+            <img src="img/Productos Dove/acondicionador_dove.jpg" alt="Acondicionador Dove">
+            <p class="etiqueta">TUBO 250 ML</p>
+            <h3>Acondicionador Dove Bond Intense Repair</h3>
+            <p class="marca">Inkafarma</p>
+            <div class="precios">
+              <p class="precio-regular">S/ 19.90</p>
+              <p class="precio-descuento">S/ 16.90</p>
+              <p class="precio-final">S/ 15.90</p>
+            </div>
+            <div class="delivery-icons">
+              <span class="material-symbols-rounded">local_shipping</span>
+              <span class="material-symbols-rounded">store</span>
+            </div>
+            <button>Agregar al carrito</button>
+          </div>
+  
+          <div class="producto">
+            <img src="img/Productos Dove/mascarilla_dove.jpg" alt="Mascarilla Dove">
+            <p class="etiqueta">FRASCO 250 GR</p>
+            <h3>Mascarilla Capilar Dove Bond Intense Repair</h3>
+            <p class="marca">Inkafarma</p>
+            <div class="precios">
+              <p class="precio-regular">S/ 39.90</p>
+              <p class="precio-descuento">S/ 25.90</p>
+              <p class="precio-final">S/ 24.90</p>
+            </div>
+            <div class="delivery-icons">
+              <span class="material-symbols-rounded">local_shipping</span>
+              <span class="material-symbols-rounded">store</span>
+            </div>
+            <button>Agregar al carrito</button>
+          </div>
+  
+        </div>
+        <button class="slide-btn right" onclick="document.getElementById('sliderDove').scrollBy({left:320,behavior:'smooth'})">❯</button>
+      </div>
+    </div>
+  </section>
+  <section class="ofertas">
+
+    <div class="oferta">
+      <img src="img/ofertas/oferta_1.avif" alt="PediaSure Pack">
+      <button class="btn-agregar">＋</button>
+    </div>
+    <div class="oferta">
+      <img src="img/ofertas/oferta_2.avif" alt="Huggies Promoción">
+      <button class="btn-agregar">＋</button>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-col">
+      <h4><span class="material-symbols-rounded">account_balance_wallet</span> Monedero del Ahorro</h4>
+      <p>Programa Apoyo al Paciente</p>
+      <p>Catálogo del mes</p>
+      <p>Productos Equivalentes</p>
+      <p>Call Center - Términos</p>
+      <p>WhatsApp - Términos</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="material-symbols-rounded">support_agent</span> Contáctanos</h4>
+      <p>Nuestras boticas</p>
+      <p>Información Médica</p>
+      <p>Consultas y Sugerencias</p>
+      <p>Zona de cobertura</p>
+      <p>Central Telefónica</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="material-symbols-rounded">share</span> Síguenos</h4>
+      <p><span class="material-symbols-rounded">public</span> Facebook</p>
+      <p><span class="material-symbols-rounded">photo_camera</span> Instagram</p>
+      <p><span class="material-symbols-rounded">chat</span> WhatsApp</p>
+    </div>
+    <div class="footer-col">
+      <h4><span class="material-symbols-rounded">location_on</span> Ubicación</h4>
+      <p>Av. Salud 123, Lima, Perú</p>
+    </div>
+  </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
